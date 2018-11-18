@@ -1,0 +1,63 @@
+@import '../../scss/breakpoints';
+@import '../../scss/colors';
+@import '../../scss/typography';
+
+.search {
+  display: flex;
+  padding: 20px;
+  font-family: $header-font;
+  align-items: center;
+  flex-grow: 1;
+  color: $card-bg;
+  flex-direction: column;
+}
+
+.search-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.search-subtitle {
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $card-bg;
+  }
+}
+
+.search-input {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+
+  input {
+    border: 0;
+    border-bottom: 1px solid $card-bg;
+    border-radius: 0;
+    background: transparent;
+    padding: 10px 20px 10px 30px;
+    width: 100%;
+    color: $card-bg;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125rem;
+    -webkit-appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
